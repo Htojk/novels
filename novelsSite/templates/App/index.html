@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="/static/myApp/index/css/index.css" >
+</head>
+<body>
+<div id="top_t">
+</div>
+<div id="body">
+<div id="top_d">
+    <form method="post" action="/index/">
+        {% csrf_token %}
+{#        <a class="topfont">用户名</a>#}
+{#        <input type="text" name="account" class="inputbox">#}
+{#        <a class="topfont">密码</a>#}
+{#        <input type="password" name="password" class="inputbox">#}
+{#        <input type="submit" value="登录" style="background-color: blueviolet;font-size: 12px;font-style;color: white" >#}
+        {{ loginStatus|safe }}
+        <img src="/static/myApp/index/imgs/weibo.jpg"class="top_icon">
+        <a href="" style="font-size: 12px">微博登录</a>
+        <img src="/static/myApp/index/imgs/qq.jpg" class="top_icon">
+        <a style="font-size: 12px">qq登录</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="register" style="font-size: 12px">注册</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a style="font-size: 12px">忘记密码</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a style="font-size: 12px">免费拿金币</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a style="font-size: 12px">放到桌面</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a style="font-size: 12px">收藏本站</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/usercenter/" style="font-size: 12px">个人中心</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a id="top_last_a">客服咨询</a>
+    </form>
+</div>
+<div id="top_logo">
+    <a href="">
+        <img src="/static/myApp/index/imgs/logo.jpg" style="height: 108px;width:205px;margin-top:7px;float: left">
+    </a>
+     <a href="">
+        <img src="/static/myApp/index/imgs/header.jpg"style="float:right;height: 120px;width: 845px;">
+    </a>
+</div>
+<div id="nav">
+    <ul>
+        <li>
+            <a href="/index/">首页</a>
+        </li>
+        <li>
+            <a href="">玄幻</a>
+        </li>
+        <li>
+            <a href="">修真</a>
+        </li>
+        <li>
+            <a href="" target="_blank">武侠</a>
+        </li>
+        <li>
+            <a href="" target="_blank">言情</a>
+        </li>
+        <li>
+            <a href="" target="_blank">书库</a>
+        </li>
+        <li>
+            <a href="" target="_blank">充值中心</a>
+        </li>
+        <li>
+            <a href="" target="_blank">作者福利</a>
+        </li>
+        <li>
+            <a href="" target="_blank">活动专区</a>
+        </li>
+        <li>
+            <a href="" target="_blank">论坛</a>
+        </li>
+        <li>
+            <a href="" target="_blank">在线漫画</a>
+        </li>
+    </ul>
+</div>
+
+<div id="hot_broadcast">
+
+    <div id="hot_broadcast_left">
+        <span id="toleft">
+            <img src="/static/myApp/index/imgs/toleft.jpg">
+        </span>
+        <span id="toright">
+            <img src="/static/myApp/index/imgs/toright.jpg">
+        </span>
+    </div>
+
+    <div id="hot_broadcast_right">
+        <span style="font-size: 30px;">热门经典</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span><a href="" id="more_a">更多>></a></span>
+        <hr>
+        <ul class="hot_book_lists">
+            <li>
+                <span>1</span>&nbsp;&nbsp;
+                <a href="">斗破苍穹</a>
+            </li>
+            <li>
+                <span>2</span>&nbsp;&nbsp;
+                <a>斗罗大陆</a>
+            </li>
+            <li>
+                <span>3</span>&nbsp;&nbsp;
+                <a>大唐双龙传</a>
+            </li>
+            <li>
+                <span>4</span>&nbsp;&nbsp;
+                <a>倚天屠龙记</a>
+            </li>
+            <li>
+                <span>5</span>&nbsp;&nbsp;
+                <a>天龙八部</a>
+            </li>
+            <li>
+                <span>6</span>&nbsp;&nbsp;
+                <a>秦时明月</a>
+            </li>
+            <li>
+                <span>7</span>&nbsp;&nbsp;
+                <a>仙逆</a>
+            </li>
+            <li>
+                <span>8</span>&nbsp;&nbsp;
+                <a>武动乾坤</a>
+            </li>
+            <li>
+                <span>9</span>&nbsp;&nbsp;
+                <a>花千骨</a>
+            </li>
+            <li>
+                <span>10</span>&nbsp;&nbsp;
+                <a>琅琊榜</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+    <hr>
+ <div class="group">
+        <div class="group_title">
+            <img src="/static/myApp/index/imgs/group_1.jpg" style="float: left">
+
+            <span>
+                &nbsp;&nbsp;玄幻小说
+            </span>
+        </div>
+     <hr>
+     <div class="group_details">
+        <ul class="group_row_1">
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+        </ul>
+          <ul class="group_row_2">
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li> <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+        </ul>
+
+
+     </div>
+ </div>
+ <div class="group">
+        <div class="group_title">
+            <img src="/static/myApp/index/imgs/group_1.jpg" style="float: left">
+
+            <span>
+                &nbsp;&nbsp;玄幻小说
+            </span>
+        </div>
+     <hr>
+     <div class="group_details">
+        <ul class="group_row_1">
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+        </ul>
+          <ul class="group_row_2">
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li> <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+        </ul>
+
+
+     </div>
+ </div>
+ <div class="group">
+        <div class="group_title">
+            <img src="/static/myApp/index/imgs/group_1.jpg" style="float: left">
+
+            <span>
+                &nbsp;&nbsp;玄幻小说
+            </span>
+        </div>
+     <hr>
+     <div class="group_details">
+        <ul class="group_row_1">
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+        </ul>
+          <ul class="group_row_2">
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+            <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li> <li>
+                <a href="" style="outline: none;text-decoration: none;color: black">
+                    <img src="/static/myApp/index/imgs/book.jpg">
+                    <p>《山中客》&nbsp;兰陵笑笑</p>
+                    <p>阅读量：1356888</p>
+                </a>
+            </li>
+        </ul>
+
+
+     </div>
+ </div>
+
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.topfont{
+    text-outline: none;
+    text-decoration: none;
+    font-size: 12px;
+}
+.inputbox{
+    width: 80px;
+    height: 12px;
+    line-height: 12px;
+
+}
+
+#body{
+    width: 1050px;
+    height: auto;
+    /*border: 1px red solid;*/
+    margin: -36px auto;
+    float: top;
+}
+
+#top_t{
+    width:100%;
+    height: 36px ;
+    background: whitesmoke;
+}
+#top_d{
+    width: 100%;
+    height: 28px;
+    /*border: 1px solid black;*/
+    padding-top: 7px;
+
+}
+#header{
+
+}
+#top_last_a{
+    font-size:12px;
+    color: red;
+    float:right;
+}
+.top_icon{
+    height: 12px;
+    width: 12px;
+}
+#top_logo{
+    height:120px;
+    width:auto;
+    /*border:1px solid blue;*/
+    float: none;
+}
+#nav{
+    margin-top: -16px;
+    height:40px;
+    width:auto;
+    background: midnightblue;
+}
+#nav ul li{
+    list-style: none;
+    float:left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+#nav ul li a{
+    text-outline: none;
+    text-decoration: none;
+    color:white;
+}
+#hot_broadcast{
+    /*border: 1px solid red;*/
+    width: auto;
+    height: 400px;
+}
+#hot_broadcast_left{
+    position: absolute;
+    border: 1px solid blue;
+    width:700px;
+    height: 400px;
+    /*float:left;*/
+    background-image: url("/static/myApp/index/imgs/book1.jpg");
+}
+#hot_broadcast_right{
+    border:1px solid green;
+    width:300px;
+    height:400px;
+    padding-left: 20px;
+    float:right
+}
+#toleft{
+    position: absolute;
+    top: 200px;
+    left: 60px;
+}
+#toright{
+    position: absolute;
+    top: 200px;
+    right: 60px;
+}
+#more_a{
+    text-outline: none;
+    text-decoration: none;
+    font-size: 14px;
+}
+.hot_book_lists{
+    padding-left:0px;
+
+}
+
+.hot_book_lists li{
+    list-style: none;
+    padding-top: 2px;
+}
+.hot_book_lists li span{
+    width: 25px;
+    height:25px;
+    border-radius: 19px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    float:left;
+    background-image: url("/static/myApp/index/imgs/circle_icon_11.jpg");
+    /*background-image: url("/static/myApp/index/imgs/circle_icon_1.jpg");*/
+}
+.hot_book_lists li a{
+    font-size: 20px;
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+.group{
+    border: 4px solid red;
+    height:960px;
+    width:auto;
+    float:top;
+
+
+}
+.group_title{
+    height: 100px;
+    width: auto;
+}
+.group_title span{
+    font-size: 40px;
+    font-family: 楷体;
+    line-height: 100px;
+    text-align: center;
+    float:left;
+}
+.group_details .group_row_1{
+    list-style: none;
+    float: top;
+    margin-top:10px;
+}
+
+.group_row_2{
+   position: relative;
+    top: 10px;
+    float: top;
+}
+
+
+.group_details ul li{
+    display: block;
+    list-style: none;
+    height: 400px;
+    width: 250px;
+    border:1px solid black;
+    float:left;
+    margin-left: 50px;
+}
+.group_details ul li img{
+    padding-left: 5px;
+    padding-top:5px;
+}
+.group_details ul p{
+    font-size: 16px;
+    line-height: 16px;
+
+}

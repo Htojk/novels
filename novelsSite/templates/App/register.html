@@ -1,0 +1,36 @@
+<link rel="stylesheet" type="text/css" href="/static/myApp/register/css/register.css">
+{% extends "App/base.html" %}
+{% block main %}
+
+    <hr>
+    <h1 style="text-align: center;color: red">用户注册</h1>
+    <hr>
+    <form>
+        <div id="register_all">
+
+            <div id="register_left">
+                <ul>
+                    <li>邮箱:</li>
+                    <li>验证码:</li>
+                    <li>密码:</li>
+                    <li>确认密码:</li>
+                </ul>
+            </div>
+            <div id="register_mid">
+                <ul>
+                    <li><input type="email" name="email"></li>
+                    <li><input type="text"></li>
+                    <li><input type="password"></li>
+                    <li><input type="password" name="password"></li>
+                    <li><input type="submit" value="确认提交"></li>
+                </ul>
+            </div>
+            <div id="register_right">
+                <img src="">
+            </div>
+
+        </div>
+     </form>
+
+
+{% endblock main %}

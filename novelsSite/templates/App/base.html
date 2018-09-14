@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/static/myApp/base/css/base.css">
+</head>
+<body>
+<div id="nav">
+
+    <ul>
+        <a href="/index/"><img src="/static/myApp/base/imgs/tianxia_icon.jpg"></a>
+        <li><a href="">玄幻</a></li>
+        <li><a href="">都市</a></li>
+        <li><a href="">仙侠</a></li>
+        <li><a href="">科幻</a></li>
+        <li><a href="">游戏</a></li>
+        <li><a href="">历史</a></li>
+        <li><a href="">排行</a></li>
+    </ul>
+    <span id="nav_login">
+        <a href="" class="nav_login">登陆&nbsp;| &nbsp;</a>
+        <a href="" class="nav_login">注册&nbsp;|&nbsp;</a>
+        {{ loginStatus|safe }}
+        <a href="" class="nav_login">我的书架</a>
+    </span>
+
+</div>
+<div id="body">
+
+    {% block main %}
+
+{% endblock main %}
+
+</div>
+
+
+
+
+</body>
+</html>
