@@ -3,7 +3,7 @@ beautifulsoup4==4.6.3
 certifi==2018.4.16
 cffi==1.11.5
 chardet==3.0.4
-cryptography==2.3.1
+cryptography==3.2
 Django==2.1.1
 idna==2.7
 image==1.5.25
